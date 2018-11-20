@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/extra-css.css">
+    <title>About</title>
+    <script>
+        $(document).ready(function () {
+
+            $('#main_menu').slicknav({prependTo: '#mobile-menu'});
+
+        });
+
+        function checkme() {
+            var error = "";
+
+            var subscriptionList = document.forms[0].subscription;
+            var valid = false;
+
+            if(document.getElementById('myname').value == "") {
+                error = "Please, enter your name.\n";
+            }
+
+            if(document.getElementById('phone').value == "") {
+                error += "Please, enter your phone number.\n";
+            }
+
+            if(document.getElementById('email').value == "") {
+                error += "Please, enter your email.\n";
+            }
+
+            if(document.getElementById('comments').value == "") {
+                error += "Please, enter your comments.\n";
+            }
+
+
+            for(var i=0; i < subscriptionList.length; i++) {
+                if(subscriptionList[i].checked) {
+                    valid = true;
+                    break;
+                }
+            }
+            if(!valid) {
+                error += "Please, choose subscription.\n";
+            }
+
+
+            // do not alter the code below this comment
+
+            if(error) {
+                alert(error);
+                return false
+            }
+            else {
+                return true;
+            }
+        }
+
+    </script>
+</head>
+
+
+
+
+<body>
+<div class="container mt-3">
+    <div class="row">
+
+
+        <!-- Navigation -->
+
+        <nav class="navbar navbar-expand-lg about navbar-light col-12">
+            <a class="navbar-brand active" href="home.html">
+                <img src="images/SVG/logo2.svg" width="120" height="120" class="d-inline-block align-center" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-right" id="navbarNav">
+                <ul class="navbar-nav mb-1">
+                    <li class="nav-item font-weight-bold">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                        <a class="nav-link" href="party.html">Party</a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                        <a class="nav-link" href="lessons.html">Lessons</a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                        <a class="nav-link active text-warning" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container main">
+            <section class="col-12 mt-3">
+                <ul class="list-unstyled list-inline text-center py-2">
+
+                    <li class="list-inline-item float-left text-left align-text-top mx-5 mb-5 sign-up">
+                        <fieldset>
+                            <legend><b>Sign-up Form</b></legend>
+                            <form id="the_form" name="the_form" action="FormProcessor.html" method="get" onsubmit="return checkme();">
+                                <ul>
+                                    <li><label for="myname"><b>Name</b></label>
+                                        <input type="text" name="myname" id="myname" size="30" />
+                                    </li>
+                                    <li><label for="phone"><b>Phone Number</b></label>
+                                        <input type="text" name="phone" id="phone" size="30" />
+                                    </li>
+                                    <li><label for="email"><b>Email</b></label>
+                                        <input type="text" name="email" id="email" size="30" />
+                                    </li>
+
+                                    <li><label for="comments" id="lblnotes"><b>Commments    </b></label>
+                                        <textarea name="comments" id="comments" cols="20" rows="5"></textarea>
+                                    </li>
+
+                                    <li><label><b>Subscription:</b></label><br>
+                                        <label for="free" class="radios">Special Event Updates</label>
+                                        <input type="radio" name="subscription" id="free"/><br>
+
+                                        <label for="paid" class="radios">Weekly Calendar Updates</label>
+                                        <input type="radio" name="subscription" id="paid"/><br>
+
+                                        <label for="paid" class="radios">No, Thank You!</label>
+                                        <input type="radio" name="subscription" id="premium"/>
+
+                                    </li>
+
+                                    <li><label for="submit">&nbsp;</label>
+                                        <button type="submit" id="submit">Send</button> </li>
+                                </ul>
+                            </form>
+                        </fieldset>
+                    </li>
+
+
+
+
+
+                    <li class="list-inline-item float-left text-left align-text-top mx-5 mb-5 faq">
+                        <h1>FAQ</h1>
+                        <dt><b>Do adults have to pay admission?</b></dt>
+                        <dd>Any adults who would like to skate will pay the regular admission plus skate rental if needed. For adults who are not skating, if that adult arrives to Roller Garden with a child who is paid for, then that adult would not need to pay admission. Any adults who arrive to Roller Garden without a child will need to pay admission whether they skate or not. On private events everyone pays admission whether they skate or not.</dd>
+
+                        <dt><b>If my friends are skating, do I need to pay if I'm not skating?</b></dt>
+                        <dd>Everyone must pay admission to enter. The only exception is a non-skating parent accompanying a paid child.</dd>
+
+                        <dt><b>Can I bring my own skates or blades?</b></dt>
+                        <dd>You may bring your own roller skates or inline skates. We do not allow "heely" type skates.</dd>
+
+                        <dt><b>Can I bring in food?</b></dt>
+                        <dd>No. We do not allow any food or beverage to be brought into the facility. If you are having a birthday by reservation, you may bring a cake or cupcakes but no other food or beverage. During private events, exceptions may be made only with prior approval by management.</dd>
+
+                        <dt><b>What time are you open?</b></dt>
+                        <dd>Our summer, winter and school holiday schedules vary. Please refer to specific schedules for times and prices.</dd>
+
+                        <dt><b>What size skates do you rent?</b></dt>
+                        <dd>We rent roller skates from a toddler size 8 up to an adult size 15, Inline rental from a toddler size 10 up to an adult size 14.</dd>
+
+                        <dt><b>Do you sell skates?</b></dt>
+                        <dd>Yes, we offer skates and equipment for indoor and outdoor use, for adults and kids. We carry many skates in stock for immediate purchase.</dd>
+
+                        <dt><b>What form of payment do you accept?</b></dt>
+                        <dd>We accept VISA, MasterCard, Discover and Cash. Sorry, no checks.</dd>
+
+                        <dt><b>Do I have to book a party in advance?</b></dt>
+                        <dd>Yes. We require reservations and a non-refundable deposit at least 10 days prior to the party. We recommend making your reservation as early as possible since we do book full on many weekends.</dd>
+
+                        <dt><b>Can I bring in a cake?</b></dt>
+                        <dd>Only with a reserved birthday package.  Cake or cupcakes are allowed with a reserved birthday package only.  No other food or beverage allowed.</dd>
+
+                        <dt><b>Are head phones & earbuds allowed?</b></dt>
+                        <dd>No, we do not allow skaters to use head phones, earbuds or any other listening devices while skating.  The only exception is during Adult Only Sessions.</dd>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+
+
+
+        <!-- footer-->
+        <div class="container footer">
+
+            <!-- Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12 mt-3">
+
+                    <ul class="list-unstyled list-inline text-center py-2">
+                        <li class="list-inline-item text-left align-text-top mx-5 ">
+                            <p><b>Roller Garden</b><br>
+                                5622 West Lake Street<br>
+                                St. Louis Park, Minnesota 55416</p>
+                        </li>
+                        <li class="list-inline-item text-left align-text-top mx-5">
+                            <p><b>Phone number</b><br>
+                                952-929-5518</p>
+                        </li>
+                        <li class=" list-inline-item text-left align-text-top mx-5">
+                            <p><b>Email</b><br>
+                                <a href="mailto:rollergarden@aol.com" class="email">rollergarden@aol.com</a></p>
+                        </li>
+                        <li class="list-inline-item text-left align-text-top mx-5">
+                            <a href="https://www.facebook.com/rollergarden/" target="_blank"><img src="images/SVG/facebook.svg" width="30" alt="Facebook icon"></a>
+                            <a href="https://twitter.com/roller_garden" target="_blank"><img src="images/SVG/twitter.svg" width="30" alt="Twitter icon"></a>
+                            <a href="https://www.instagram.com/roller_garden/" target="_blank"><img src="images/SVG/instagram.svg" width="30" alt="Instagram icon"></a>
+                            <!--social media icon credit <a href="https://www.freepik.com/free-vector/icons-for-social-networking-vector-illustration-design_2763311.htm">Designed by Harryarts</a>-->
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+
+
+
+</div>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

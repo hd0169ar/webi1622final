@@ -1,0 +1,44 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+h1 {font-size: 2rem;}
+
+
+h3 {
+    font-size: 1.25rem;}
+
+
+.navbar .nav-item .nav-link {
+    color: #052749;
+    font-size: 1.25rem;
+}
+
+.schedule {background: #2278ad;}
+.party {background: #f9a004;}
+.lessons {background: #ee6c0c;}
+.about {background: orangered;}
+
+
+.nav-link .active {color: #f0b414;}
+
+
+.navbar-light .navbar-nav .nav-link:hover {color: white;}
+
+.main {
+    background: #f3eeea;
+}
+
+.footer {
+    background: #ee6c0c;
+    color: #052749;
+}
+
+.email {color: #052749;
+text-decoration: none;}
+
+.email:hover {color: white;
+text-decoration: none;}
