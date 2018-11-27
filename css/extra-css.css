@@ -17,13 +17,14 @@ h3 {
     font-size: 1.25rem;
 }
 
+.home {background: #f9bb03;}
 .schedule {background: #2278ad;}
 .party {background: #f9a004;}
 .lessons {background: #ee6c0c;}
 .about {background: orangered;}
 
 
-.nav-link .active {color: #f0b414;}
+.nav-link .active {color: white;}
 
 
 .navbar-light .navbar-nav .nav-link:hover {color: white;}
@@ -42,3 +43,4 @@ text-decoration: none;}
 
 .email:hover {color: white;
 text-decoration: none;}
+fieldset form button {margin-left: -10px;}

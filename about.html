@@ -68,7 +68,7 @@
 
 
 <body>
-<div class="container mt-3">
+<div class="container mt-3 ">
     <div class="row">
 
 
@@ -98,31 +98,30 @@
             </div>
         </nav>
 
-        <!-- Page Content -->
-        <div class="container main">
-            <section class="col-12 mt-3">
-                <ul class="list-unstyled list-inline text-center py-2">
 
-                    <li class="list-inline-item float-left text-left align-text-top mx-5 mb-5 sign-up">
+        <!-- Page Content -->
+    <div class="container main col-12 pl-5 pr-5">
+        <div class="row">
+            <div class="col-md-5 mt-5">
                         <fieldset>
                             <legend><b>Sign-up Form</b></legend>
                             <form id="the_form" name="the_form" action="FormProcessor.html" method="get" onsubmit="return checkme();">
-                                <ul>
-                                    <li><label for="myname"><b>Name</b></label>
-                                        <input type="text" name="myname" id="myname" size="30" />
-                                    </li>
-                                    <li><label for="phone"><b>Phone Number</b></label>
-                                        <input type="text" name="phone" id="phone" size="30" />
-                                    </li>
-                                    <li><label for="email"><b>Email</b></label>
-                                        <input type="text" name="email" id="email" size="30" />
-                                    </li>
 
-                                    <li><label for="comments" id="lblnotes"><b>Commments    </b></label>
-                                        <textarea name="comments" id="comments" cols="20" rows="5"></textarea>
-                                    </li>
+                                    <label for="myname"><b>Name</b></label><br>
+                                        <input type="text" name="myname" id="myname" size="30" /><br>
 
-                                    <li><label><b>Subscription:</b></label><br>
+                                    <label for="phone"><b>Phone Number</b></label><br>
+                                        <input type="text" name="phone" id="phone" size="30" /><br>
+
+                                    <label for="email"><b>Email</b></label><br>
+                                        <input type="text" name="email" id="email" size="30" /><br>
+
+
+                                    <label for="comments" id="lblnotes"><b>Commments    </b></label><br>
+                                        <textarea name="comments" id="comments" cols="20" rows="5"></textarea><br>
+
+
+                                    <label><b>Subscription:</b></label><br>
                                         <label for="free" class="radios">Special Event Updates</label>
                                         <input type="radio" name="subscription" id="free"/><br>
 
@@ -130,22 +129,20 @@
                                         <input type="radio" name="subscription" id="paid"/><br>
 
                                         <label for="paid" class="radios">No, Thank You!</label>
-                                        <input type="radio" name="subscription" id="premium"/>
+                                        <input type="radio" name="subscription" id="premium"/><br>
 
-                                    </li>
+                                <label for="submit">&nbsp;</label>
+                                        <button type="submit" id="submit">Send</button>
 
-                                    <li><label for="submit">&nbsp;</label>
-                                        <button type="submit" id="submit">Send</button> </li>
-                                </ul>
                             </form>
                         </fieldset>
-                    </li>
+            </div>
 
 
 
 
 
-                    <li class="list-inline-item float-left text-left align-text-top mx-5 mb-5 faq">
+                <div class="col-md-7 mt-5">
                         <h1>FAQ</h1>
                         <dt><b>Do adults have to pay admission?</b></dt>
                         <dd>Any adults who would like to skate will pay the regular admission plus skate rental if needed. For adults who are not skating, if that adult arrives to Roller Garden with a child who is paid for, then that adult would not need to pay admission. Any adults who arrive to Roller Garden without a child will need to pay admission whether they skate or not. On private events everyone pays admission whether they skate or not.</dd>
@@ -179,55 +176,39 @@
 
                         <dt><b>Are head phones & earbuds allowed?</b></dt>
                         <dd>No, we do not allow skaters to use head phones, earbuds or any other listening devices while skating.  The only exception is during Adult Only Sessions.</dd>
-                    </li>
-                </ul>
-            </section>
+
+            </div>
         </div>
+</div>
 
 
 
 
 
         <!-- footer-->
-        <div class="container footer">
-
-            <!-- Grid row-->
-            <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-12 mt-3">
-
-                    <ul class="list-unstyled list-inline text-center py-2">
-                        <li class="list-inline-item text-left align-text-top mx-5 ">
-                            <p><b>Roller Garden</b><br>
-                                5622 West Lake Street<br>
-                                St. Louis Park, Minnesota 55416</p>
-                        </li>
-                        <li class="list-inline-item text-left align-text-top mx-5">
-                            <p><b>Phone number</b><br>
-                                952-929-5518</p>
-                        </li>
-                        <li class=" list-inline-item text-left align-text-top mx-5">
-                            <p><b>Email</b><br>
-                                <a href="mailto:rollergarden@aol.com" class="email">rollergarden@aol.com</a></p>
-                        </li>
-                        <li class="list-inline-item text-left align-text-top mx-5">
-                            <a href="https://www.facebook.com/rollergarden/" target="_blank"><img src="images/SVG/facebook.svg" width="30" alt="Facebook icon"></a>
-                            <a href="https://twitter.com/roller_garden" target="_blank"><img src="images/SVG/twitter.svg" width="30" alt="Twitter icon"></a>
-                            <a href="https://www.instagram.com/roller_garden/" target="_blank"><img src="images/SVG/instagram.svg" width="30" alt="Instagram icon"></a>
-                            <!--social media icon credit <a href="https://www.freepik.com/free-vector/icons-for-social-networking-vector-illustration-design_2763311.htm">Designed by Harryarts</a>-->
-                        </li>
-                    </ul>
-
-
-                </div>
+    <div class="container footer col-md-12 ">
+        <div class="row">
+            <div class="col-md-3 mt-3 pl-5">
+                <p><b>Roller Garden</b><br>
+                    5622 West Lake Street<br>
+                    St. Louis Park, Minnesota 55416</p>
             </div>
-            <!-- Grid column -->
 
+            <div class="col-md-3 mt-3 pl-5">
+                <p><b>Phone number</b><br>
+                    952-929-5518</p>
+            </div>
+            <div class="col-md-3 mt-3 pl-5">
+                <p><b>Email</b><br>
+                    <a href="mailto:rollergarden@aol.com" class="email">rollergarden@aol.com</a></p>
+
+                <a href="https://www.facebook.com/rollergarden/" target="_blank"><img src="images/SVG/facebook.svg" width="30" alt="Facebook icon"></a>
+                <a href="https://twitter.com/roller_garden" target="_blank"><img src="images/SVG/twitter.svg" width="30" alt="Twitter icon"></a>
+                <a href="https://www.instagram.com/roller_garden/" target="_blank"><img src="images/SVG/instagram.svg" width="30" alt="Instagram icon"></a>
+                <!--social media icon credit <a href="https://www.freepik.com/free-vector/icons-for-social-networking-vector-illustration-design_2763311.htm">Designed by Harryarts</a>-->
+            </div>
         </div>
-        <!-- Grid row-->
-
     </div>
-    <!-- Footer Elements -->
 
 
 
